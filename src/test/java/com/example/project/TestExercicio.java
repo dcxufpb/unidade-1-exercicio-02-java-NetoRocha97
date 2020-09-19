@@ -64,10 +64,10 @@ public class TestExercicio {
 	public void exercicio02_Customizado() {
 		//Defina seus próprios valores para as variáveis a seguir 
 		CupomFiscal.NOME_LOJA = "Loja CRVG";
-		CupomFiscal.LOGRADOURO = "R Gen Almério de Moura";
+		CupomFiscal.LOGRADOURO = "R Gen Almerio de Moura";
 		CupomFiscal.NUMERO = 131;
-		CupomFiscal.COMPLEMENTO = "Estádio";
-		CupomFiscal.BAIRRO = "São Januário";
+		CupomFiscal.COMPLEMENTO = "Estadio";
+		CupomFiscal.BAIRRO = "Sao Januario";
 		CupomFiscal.MUNICIPIO = "Rio de Janeiro";
 		CupomFiscal.ESTADO = "RJ";
 		CupomFiscal.CEP = "20921060";
@@ -78,8 +78,8 @@ public class TestExercicio {
 		
 		//E atualize o texto esperado abaixo
 		rodarTestarOutput("Loja CRVG" + BREAK +
-						"R Gen Almério de Moura, 131 Estádio" + BREAK +
-						"São Januário - Rio de Janeiro - RJ" + BREAK +
+						"R Gen Almerio de Moura, 131 Estadio" + BREAK +
+						"Sao Januario - Rio de Janeiro - RJ" + BREAK +
 						"CEP:20921060 Tel (21) 9189-8192" + BREAK +
 						"Obs1" + BREAK +
 						"CNPJ: 11.300.451/1010-10" + BREAK +
