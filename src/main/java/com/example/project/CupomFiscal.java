@@ -15,18 +15,35 @@ public class CupomFiscal {
 	public static String CNPJ = "42.591.651/0797-34";
 	public static String INSCRICAO_ESTADUAL = "244.898.500.113";
 
-	private static String quebraDLinhaString = System.lineSeparator();
+	private static String brk = System.lineSeparator();
 
 	public static void exercicio01() {
-		String dadosDaLoja = NOME_LOJA + quebraDLinhaString;
-		dadosDaLoja += LOGRADOURO + ", " + NUMERO + " " + COMPLEMENTO + quebraDLinhaString; 
-		dadosDaLoja += BAIRRO +" - " + MUNICIPIO + " - " + ESTADO + quebraDLinhaString;
-		dadosDaLoja += "CEP:" + CEP + " Tel " + TELEFONE + quebraDLinhaString;
-		dadosDaLoja += OBSERVACAO + quebraDLinhaString;
-		dadosDaLoja += "CNPJ: " + CNPJ + quebraDLinhaString;
+		String dadosDaLoja = NOME_LOJA + brk;
+		dadosDaLoja += LOGRADOURO + ", " + NUMERO + " " + COMPLEMENTO + brk; 
+		dadosDaLoja += BAIRRO +" - " + MUNICIPIO + " - " + ESTADO + brk;
+		dadosDaLoja += "CEP:" + CEP + " Tel " + TELEFONE + brk;
+		dadosDaLoja += OBSERVACAO + brk;
+		dadosDaLoja += "CNPJ: " + CNPJ + brk;
 		dadosDaLoja += "IE: " + INSCRICAO_ESTADUAL;
 
 		System.out.println(dadosDaLoja);
 
 	}
+
+	public void exercicio02_tudoVazio() {
+		System.out.println(
+			brk +
+			", " + brk +
+			" -  - " + brk +
+			"CEP: Tel " + brk +
+			brk +
+			"CNPJ: " + brk +
+			"IE: "
+		);
+	}
+
+	public static void main(final String[] args) {
+		exercicio01();
+	}
+
 }

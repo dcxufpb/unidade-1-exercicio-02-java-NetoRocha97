@@ -64,26 +64,26 @@ public class TestExercicio {
 	public void exercicio02_Customizado() {
 		//Defina seus próprios valores para as variáveis a seguir 
 		CupomFiscal.NOME_LOJA = "Loja CRVG";
-		CupomFiscal.LOGRADOURO = "R. Gen. Almério de Moura";
+		CupomFiscal.LOGRADOURO = "R Gen Almério de Moura";
 		CupomFiscal.NUMERO = 131;
 		CupomFiscal.COMPLEMENTO = "Estádio";
 		CupomFiscal.BAIRRO = "São Januário";
 		CupomFiscal.MUNICIPIO = "Rio de Janeiro";
 		CupomFiscal.ESTADO = "RJ";
-		CupomFiscal.CEP = "20921-060";
-		CupomFiscal.TELEFONE = "(21) 91898-1927";
-		CupomFiscal.OBSERVACAO = "Obs 1";
-		CupomFiscal.CNPJ = "12.111.333/12133-12";
+		CupomFiscal.CEP = "20921060";
+		CupomFiscal.TELEFONE = "(21) 9189-8192";
+		CupomFiscal.OBSERVACAO = "Obs1";
+		CupomFiscal.CNPJ = "11.300.451/1010-10";
 		CupomFiscal.INSCRICAO_ESTADUAL = "123.456.789.000";
 		
 		//E atualize o texto esperado abaixo
 		rodarTestarOutput("Loja CRVG" + BREAK +
-"R. Gen. Almério de Moura, 131 Estádio" + BREAK +
-"São Januário - Rio de Janeiro - RJ" + BREAK +
-"CEP:20921-060 Tel (21) 91898-1927" + BREAK +
-"Obs 1" + BREAK +
-"CNPJ: 12.111.333/12133-12" + BREAK +
-"IE: 123.456.789.000" + BREAK
+						"R Gen Almério de Moura, 131 Estádio" + BREAK +
+						"São Januário - Rio de Janeiro - RJ" + BREAK +
+						"CEP:20921060 Tel (21) 9189-8192" + BREAK +
+						"Obs1" + BREAK +
+						"CNPJ: 11.300.451/1010-10" + BREAK +
+						"IE: 123.456.789.000" + BREAK
 						
 			);
 	}
