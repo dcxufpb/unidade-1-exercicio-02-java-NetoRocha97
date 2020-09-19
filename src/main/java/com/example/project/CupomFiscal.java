@@ -29,3 +29,4 @@ public class CupomFiscal {
 		System.out.println(dadosDaLoja);
 
 	}
+}

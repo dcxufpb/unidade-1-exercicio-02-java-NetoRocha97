@@ -78,12 +78,12 @@ public class TestExercicio {
 		
 		//E atualize o texto esperado abaixo
 		rodarTestarOutput("Loja CRVG" + BREAK +
-						"R. Gen. Almério de Moura, 131 Estádio" + BREAK +
-						"São Januário - Rio de Janeiro - RJ" + BREAK +
-						"CEP:20921-060 Tel (21) 91898-1927" + BREAK +
-						"Obs 1" + BREAK +
-						"CNPJ: 12.111.333/12133-12" + BREAK +
-						"IE: 123.456.789.000" + BREAK
+"R. Gen. Almério de Moura, 131 Estádio" + BREAK +
+"São Januário - Rio de Janeiro - RJ" + BREAK +
+"CEP:20921-060 Tel (21) 91898-1927" + BREAK +
+"Obs 1" + BREAK +
+"CNPJ: 12.111.333/12133-12" + BREAK +
+"IE: 123.456.789.000" + BREAK
 						
 			);
 	}
