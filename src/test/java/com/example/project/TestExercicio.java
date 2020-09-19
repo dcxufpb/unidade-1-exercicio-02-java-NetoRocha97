@@ -12,6 +12,20 @@ public class TestExercicio {
 
 	@Test
 	public void exercicio01() {
+
+		CupomFiscal.NOME_LOJA = "Arcos Dourados Com. de Alimentos LTDA";
+		CupomFiscal.LOGRADOURO = "Av. Projetada Leste";
+		CupomFiscal.NUMERO = 500;
+		CupomFiscal.COMPLEMENTO = "EUC F32/33/34";
+		CupomFiscal.BAIRRO = "Br. Sta Genebra";
+		CupomFiscal.MUNICIPIO = "Campinas";
+		CupomFiscal.ESTADO = "SP";
+		CupomFiscal.CEP = "13080-395";
+		CupomFiscal.TELEFONE = "(19) 3756-7408";
+		CupomFiscal.OBSERVACAO = "Loja 1317 (PDP)";
+		CupomFiscal.CNPJ = "42.591.651/0797-34";
+		CupomFiscal.INSCRICAO_ESTADUAL = "244.898.500.113";
+
 		rodarTestarOutput("Arcos Dourados Com. de Alimentos LTDA" + BREAK + 
 				"Av. Projetada Leste, 500 EUC F32/33/34" + BREAK + 
 				"Br. Sta Genebra - Campinas - SP" + BREAK + 
@@ -42,27 +56,36 @@ public class TestExercicio {
 				"CEP: Tel " + BREAK + 
 				"" + BREAK + 
 				"CNPJ: " + BREAK + 
-				"IE: " + BREAK);
+				"IE: " + BREAK
+			);
 	}
 
 	@Test
 	public void exercicio02_Customizado() {
 		//Defina seus próprios valores para as variáveis a seguir 
-		CupomFiscal.NOME_LOJA = "";
-		CupomFiscal.LOGRADOURO = "";
-		CupomFiscal.NUMERO = 0;
-		CupomFiscal.COMPLEMENTO = "";
-		CupomFiscal.BAIRRO = "";
-		CupomFiscal.MUNICIPIO = "";
-		CupomFiscal.ESTADO = "";
-		CupomFiscal.CEP = "";
-		CupomFiscal.TELEFONE = "";
-		CupomFiscal.OBSERVACAO = "";
-		CupomFiscal.CNPJ = "";
-		CupomFiscal.INSCRICAO_ESTADUAL = "";
+		CupomFiscal.NOME_LOJA = "Loja CRVG";
+		CupomFiscal.LOGRADOURO = "R. Gen. Almério de Moura";
+		CupomFiscal.NUMERO = 131;
+		CupomFiscal.COMPLEMENTO = "Estádio";
+		CupomFiscal.BAIRRO = "São Januário";
+		CupomFiscal.MUNICIPIO = "Rio de Janeiro";
+		CupomFiscal.ESTADO = "RJ";
+		CupomFiscal.CEP = "20921-060";
+		CupomFiscal.TELEFONE = "(21) 91898-1927";
+		CupomFiscal.OBSERVACAO = "Obs 1";
+		CupomFiscal.CNPJ = "12.111.333/12133-12";
+		CupomFiscal.INSCRICAO_ESTADUAL = "123.456.789.000";
 		
 		//E atualize o texto esperado abaixo
-		rodarTestarOutput("" + BREAK);
+		rodarTestarOutput("Loja CRVG" + BREAK +
+						"R. Gen. Almério de Moura, 131 Estádio" + BREAK +
+						"São Januário - Rio de Janeiro - RJ" + BREAK +
+						"CEP:20921-060 Tel (21) 91898-1927" + BREAK +
+						"Obs 1" + BREAK +
+						"CNPJ: 12.111.333/12133-12" + BREAK +
+						"IE: 123.456.789.000" + BREAK
+						
+			);
 	}
 
 	private void rodarTestarOutput(String expected) {
